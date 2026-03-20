@@ -1,0 +1,15 @@
+<fieldset>
+    <legend>Configuración del Documento MWB</legend>
+    <form action="/save_doc" method="POST">
+        <label>Nombre del Archivo XML:</label>
+        <input type="text" name="xml_name" value="document.mwb.xml" readonly>
+        
+        <label>Versión del Modelo:</label>
+        <input type="text" name="model_version" value="1.0" required>
+        
+        <label>Esquema Principal:</label>
+        <input type="text" name="schema_name" value="mydb" required>
+        
+        <button type="submit">Actualizar Metadata</button>
+    </form>
+</fieldset>
